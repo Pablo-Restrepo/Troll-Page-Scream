@@ -6,12 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Pagina</title>
 </head>
 
 <body>
-    <video src="video.mp4" controls></video>
+    <video id="video" autoplay muted>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <button type="button" onclick="showVideo()" id="button">Click Me</button>
+    </div>
 
 </body>
+
+<script src="main.js"></script>
 
 </html>
