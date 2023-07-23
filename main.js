@@ -19,7 +19,7 @@ function delay(time) {
 
 function showVideo() {
     var element = document.getElementById('video');
-    var button = document.getElementById('button');
+    var button = document.getElementById('container');
     element.style.display = 'block';
     button.style.display = 'none';
     delay(100).then(() => toggleMute());

@@ -14,10 +14,20 @@
         <source src="video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
-    <div class="container">
-        <button type="button" onclick="showVideo()" id="button">Click Me</button>
+    <div class="container" id="container">
+        <div class="recaptcha-container">
+            <div class="button-container">
+                <div class="button" onclick="showVideo()"></div>
+            </div>
+            <div class="text-container">
+                <p>I'm not a robot</p>
+            </div>
+            <div class="image-container">
+                <img src="RecaptchaLogo.png" alt="Recaptcha">
+                <p>Privacy - Terms</p>
+            </div>
+        </div>
     </div>
-
 </body>
 
 <script src="main.js"></script>
