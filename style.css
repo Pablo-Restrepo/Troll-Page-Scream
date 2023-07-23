@@ -17,12 +17,34 @@ video {
     display: none;
 }
 
-.recaptcha-container {
+p,
+h2 {
+    text-align: center;
+}
+
+.gif {
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+.recaptcha-container {
     display: flex;
     align-items: center;
 
@@ -33,6 +55,7 @@ video {
     border-radius: 4px;
     border-color: rgb(224, 224, 224);
     background-color: rgb(250, 250, 250);
+    margin-bottom: 20px;
 }
 
 .button-container {
@@ -50,8 +73,7 @@ video {
     border-style: solid;
     border-color: #b2b2b2;
     border-radius: 4px;
-    background-color: rgb(250, 250, 250);
-    outline-color: rgb(0, 131, 143);
+    background-color: rgb(255, 255, 255);
     top: 0px;
     left: 0px;
     cursor: pointer;
