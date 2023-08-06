@@ -24,3 +24,27 @@ function showVideo() {
     button.style.display = 'none';
     delay(100).then(() => toggleMute());
 }
+
+const fullscreenButton = document.getElementById('button');
+const content = document.getElementById('container-video');
+
+fullscreenButton.addEventListener('click', () => {
+    if (content.requestFullscreen) {
+        content.requestFullscreen();
+    } else if (content.mozRequestFullScreen) { // Firefox
+        content.mozRequestFullScreen();
+    } else if (content.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        content.webkitRequestFullscreen();
+    } else if (content.msRequestFullscreen) { // Internet Explorer/Edge
+        content.msRequestFullscreen();
+    }
+});
+
+document.addEventListener('fullscreenchange', () => {
+    if (document.fullscreenElement) {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'block';
+    }
+});
+

@@ -10,10 +10,13 @@
 </head>
 
 <body>
-    <video id="video" autoplay muted loop>
-        <source src="vid/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
+    <div class="container-video" id="container-video">
+        <video class="video" id="video" autoplay muted loop>
+            <source src="vid/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
     <div class="container" id="container">
         <img class="gif" src="img/dots.gif" alt="Dots">
         <h2 class="text">Checking your browser before accessing attachment.</h2>
@@ -21,7 +24,7 @@
         <p>Please enter captcha</p>
         <div class="recaptcha-container">
             <div class="button-container">
-                <div class="button" onclick="showVideo()"></div>
+                <div class="button" id="button" onclick="showVideo()"></div>
             </div>
             <div class="text-container">
                 <p>I'm not a robot</p>
