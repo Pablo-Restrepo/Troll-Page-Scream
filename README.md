@@ -2,7 +2,7 @@
 
 This project is a troll screamer web page created using HTML, CSS, and JavaScript.
  
-## Link 👉 https://pablo736.github.io/Troll-Page-Scream/
+## Link 👉 https://Pablo-Restrepo.github.io/Troll-Page-Scream/
 
 <p align="center">
   <img src="docs/image1.png"">
