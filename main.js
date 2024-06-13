@@ -49,25 +49,25 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const contadorElement = document.getElementById("contador");
-    const mensajeElement = document.getElementById("recaptcha-container");
-    const mensajeElementText = document.getElementById("text-captcha");
+    const counterElement = document.getElementById("counter");
+    const messageElement = document.getElementById("recaptcha-container");
+    const messageElementText = document.getElementById("text-captcha");
 
-    let segundos = 3;
+    let seconds = 3;
 
-    function actualizarContador() {
-        contadorElement.textContent = "Please allow up to " + segundos + " seconds...";
-        segundos--;
+    function updateCounter() {
+        counterElement.textContent = "Please allow up to " + seconds + " seconds...";
+        seconds--;
 
-        if (segundos < 0) {
-            clearInterval(intervalo);
-            contadorElement.style.display = "none";
-            mensajeElement.style.display = "flex";
-            mensajeElementText.style.display = "flex"
+        if (seconds < 0) {
+            clearInterval(interval);
+            counterElement.style.display = "none";
+            messageElement.style.display = "flex";
+            messageElementText.style.display = "flex"
         }
     }
 
-    actualizarContador();
-    const intervalo = setInterval(actualizarContador, 1000);
+    updateCounter();
+    const interval = setInterval(updateCounter, 1000);
 });
 
